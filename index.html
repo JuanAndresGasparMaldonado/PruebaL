@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Tenístico</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navbar = document.querySelector(".navbar");
+
+            hamburger.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mundo Tenístico</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Bienvenido al Mundo Profesional del Tenis</h1>
+            <p>Explora el calendario de torneos, las últimas estadísticas, noticias y el ranking actualizado.</p>
+            <button class="cta-button">Conoce Más</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo Profesional del Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

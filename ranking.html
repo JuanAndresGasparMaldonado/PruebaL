@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - Mundo Tenístico</title>
+    <link rel="stylesheet" href="./styles/styles_ranking.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navbar = document.querySelector(".navbar");
+    
+            hamburger.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mundo Tenístico</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ranking ATP</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Jugador</th>
+                    <th>Puntos</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jannik Sinner</td>
+                    <td>11,830</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Alexander Zverev</td>
+                    <td>7,915</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos Alcaraz</td>
+                    <td>7,010</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Taylor Fritz</td>
+                    <td>5,100</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Daniil Medvedev</td>
+                    <td>5,030</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Casper Ruud</td>
+                    <td>4,255</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Novak Djokovic</td>
+                    <td>3,910</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Andrey Rublev</td>
+                    <td>3,760</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Alex de Miñaur</td>
+                    <td>3,745</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Grigor Dimitrov</td>
+                    <td>3,350</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo Profesional del Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

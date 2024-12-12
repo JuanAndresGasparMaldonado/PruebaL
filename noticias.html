@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Mundo Tenístico</title>
+    <link rel="stylesheet" href="./styles/styles_noticias.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navbar = document.querySelector(".navbar");
+    
+            hamburger.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mundo Tenístico</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Últimas Noticias</h1>
+        <section class="news">
+            <article>
+                <h2>Título de la Noticia</h2>
+                <p>Resumen breve de la noticia con los detalles más importantes.</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo Profesional del Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

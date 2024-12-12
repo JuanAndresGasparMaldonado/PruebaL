@@ -1,0 +1,46 @@
+@import url('./styles.css'); /* Reutilizamos el estilo base */
+
+/* Estilo para noticias */
+.news {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article h2 {
+    font-size: 1.8rem;
+    color: #007a33;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+article a {
+    text-decoration: none;
+    color: #005922;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+article a:hover {
+    color: #007a33;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

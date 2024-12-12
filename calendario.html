@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - Mundo Tenístico</title>
+    <link rel="stylesheet" href="./styles/styles_calendario.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.querySelector(".hamburger");
+            const navbar = document.querySelector(".navbar");
+    
+            hamburger.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+    </script>    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Mundo Tenístico</div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Calendario de Torneos</h1>
+        <section class="calendar">
+            <div class="event">
+                <h2>Adelaide International</h2>
+                <p>Fecha: 6 ene</p>
+                <p>Ubicación: Adelaida, Australia</p>
+            </div>
+            <div class="event">
+                <h2>ASB Classic</h2>
+                <p>Fecha: 6 ene</p>
+                <p>Ubicación: Auckland</p>
+            </div>
+            <div class="event">
+                <h2>Abierto de Australia</h2>
+                <p>Fecha: 12 - 26 de enero</p>
+                <p>Ubicación: Melbourne, Australia</p>
+            </div>
+            <div class="event">
+                <h2>Open Sud De France-Montpellier</h2>
+                <p>Fecha: 27 ene</p>
+                <p>Ubicación: Montpellier</p>
+            </div>
+            <div class="event">
+                <h2>Dallas Open</h2>
+                <p>Fecha: 3 feb</p>
+                <p>Ubicación: Dallas</p>
+            </div>
+            <div class="event">
+                <h2>ABN AMRO Open</h2>
+                <p>Fecha: 3 feb</p>
+                <p>Ubicación: Róterdam</p>
+            </div>
+            <div class="event">
+                <h2>IEB+ Argentina Open</h2>
+                <p>Fecha: 10 feb</p>
+                <p>Ubicación: Buenos Aires, Argentina</p>
+            </div>
+            <div class="event">
+                <h2>Delray Beach Open</h2>
+                <p>Fecha: 10 feb</p>
+                <p>Ubicación: Delray Beach</p>
+            </div>
+            <div class="event">
+                <h2>Open 13 Provence</h2>
+                <p>Fecha: 10 feb</p>
+                <p>Ubicación: Marsella, Francia</p>
+            </div>
+            <div class="event">
+                <h2>Qatar Exxonmobill Open</h2>
+                <p>Fecha: 17 feb</p>
+                <p>Ubicación: Doha</p>
+            </div>
+            <div class="event">
+                <h2>Rio Open</h2>
+                <p>Fecha: 17 feb</p>
+                <p>Ubicación: Río de Janeiro, Brasil</p>
+            </div>
+            <div class="event">
+                <h2>Roland Garros</h2>
+                <p>Fecha: 25 de mayo - 8 de junio</p>
+                <p>Ubicación: París, Francia</p>
+            </div>
+            <div class="event">
+                <h2>Wimbledon</h2>
+                <p>Fecha: 30 de junio - 13 de julio</p>
+                <p>Ubicación: Londres, Reino Unido</p>
+            </div>
+            <div class="event">
+                <h2>US Open</h2>
+                <p>Fecha: 25 de agosto - 7 de septiembre</p>
+                <p>Ubicación: Nueva York, Estados Unidos</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mundo Profesional del Tenis. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

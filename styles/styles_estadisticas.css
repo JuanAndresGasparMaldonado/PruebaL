@@ -1,0 +1,36 @@
+@import url('./styles.css'); /* Reutilizamos el estilo base */
+
+/* Estilo para estadísticas */
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.stat {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stat h2 {
+    color: #005922;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
