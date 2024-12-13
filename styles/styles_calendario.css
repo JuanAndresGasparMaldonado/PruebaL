@@ -1,5 +1,6 @@
 @import url('./styles.css'); /* Reutilizamos el estilo base */
 
+
 /* Estilo para el calendario */
 .calendar {
     display: grid;
