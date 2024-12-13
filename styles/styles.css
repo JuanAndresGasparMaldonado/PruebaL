@@ -106,17 +106,85 @@ body {
 }
 
 .cta-button {
-    background-color: #007a33;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #007a33; /* Color de fondo blanco */
+    color: #ffff; /* Color del texto (puedes cambiarlo si lo deseas) */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+    display: inline-block; /* Asegúrate de que el botón sea un bloque en línea */
+    margin: 0 auto; /* Centra el botón */
 }
 
 .cta-button:hover {
-    background-color: #005922;
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse (puedes cambiarlo) */
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 100%; /* Altura fija para el banner */
+    width: 100%; /* Ancho completo */
+}
+
+.banner-container {
+    display: flex;
+    animation: slide 14s infinite; /* Cambia la duración según sea necesario */
+}
+
+.banner-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative; /* Asegúrate de que el contenedor sea relativo para posicionar el botón */
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%; /* Asegúrate de que la imagen ocupe todo el contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
+}
+
+.banner-button {
+    background-color: #007a33; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 50%; /* Centra el botón verticalmente */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el botón para que esté centrado */
+    
+}
+
+.banner-button:hover {
+    background-color: #005922; /* Color de fondo al pasar el mouse */
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(0); }
+    36.66% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-100%); }
+    69.99% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        height: 100%; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 100%; /* Ajusta la altura para pantallas muy pequeñas */
+    }
 }
 
 /* Footer */
