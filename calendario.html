@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Declaración del tipo de documento HTML5 y configuración del idioma del contenido -->
     <meta charset="UTF-8">
+    <!-- Configuración para asegurar que la página se adapte a diferentes tamaños de pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario - Mundo Tenístico</title>
+    <!-- Enlace a la hoja de estilos específica para esta página -->
     <link rel="stylesheet" href="./styles/styles_calendario.css">
+    <!-- Importación de fuentes personalizadas desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
     <script>
+        // Script para controlar el menú hamburguesa en dispositivos móviles
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
     
+            // Añade o quita la clase 'active' al menú al hacer clic en el icono de hamburguesa
             hamburger.addEventListener("click", function () {
                 navbar.classList.toggle("active");
             });
@@ -19,13 +25,18 @@
 </head>
 <body>
     <header>
+        <!-- Encabezado principal que contiene la barra de navegación -->
         <nav class="navbar">
+            <!-- Logotipo del sitio web -->
             <div class="logo">Mundo Tenístico</div>
+            <!-- Icono de menú hamburguesa para navegación móvil -->
             <div class="hamburger">
+                <!-- Tres líneas que representan el icono -->
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <!-- Lista de enlaces de navegación -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -37,7 +48,9 @@
         </nav>
     </header>
     <main>
+        <!-- Título principal de la página -->
         <h1>Calendario de Torneos</h1>
+                <!-- Sección destinada a mostrar el calendario -->
         <section class="calendar">
             <div class="event">
                 <h2>Adelaide International</h2>
@@ -413,6 +426,7 @@
             </div>
         </section>
     </main>
+            <!-- Pie de página con información de derechos de autor -->
     <footer>
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>

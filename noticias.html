@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Declaración del tipo de documento HTML y especificación del idioma para SEO y accesibilidad -->
     <meta charset="UTF-8">
+    <!-- Metaetiqueta para hacer el diseño responsivo en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias - Mundo Tenístico</title>
+    <!-- Enlace a la hoja de estilos específica para esta página -->
     <link rel="stylesheet" href="./styles/styles_noticias.css">
+    <!-- Fuentes personalizadas importadas desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
     <script>
+        // Script para manejar el menú hamburguesa en dispositivos móviles
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
     
+            // Alterna la clase 'active' para mostrar/ocultar el menú
             hamburger.addEventListener("click", function () {
                 navbar.classList.toggle("active");
             });
@@ -20,13 +26,17 @@
 <body>
     <header>
         <nav class="navbar">
+            <!-- Logotipo del sitio -->
             <div class="logo">Mundo Tenístico</div>
+            <!-- Menú hamburguesa para navegación móvil -->
             <div class="hamburger">
+                <!-- Tres líneas para representar el icono de hamburguesa -->
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <ul class="nav-links">
+                <!-- Enlaces de navegación principales -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
                 <li><a href="estadisticas.html">Estadísticas</a></li>
@@ -37,25 +47,32 @@
         </nav>
     </header>
     <main>
+        <!-- Encabezado principal de la página -->
         <h1>Últimas Noticias</h1>
         <section class="news">
+            <!-- Primera noticia -->
             <article>
                 <h2>Vía libre al club de tenis de Rafa Nadal promovido por Sierra Blanca en Málaga</h2>
+                <!-- Breve descripción de la noticia -->
                 <p>Serveo, la empresa del centro de raqueta, podría renunciar a seguir explotándolo, lo que abre la puerta a un concurso al que aspirará la...</p>
+                <!-- Enlace para leer más detalles de la noticia -->
                 <a href="#">Leer más</a>
             </article>
         </section>
         <section class="news">
+            <!-- Segunda noticia -->
             <article>
                 <h2>Nadal estará en las NextGen ATP Finals</h2>
                 <p>Un mes después de colgar definitivamente la raqueta, el pasado 19 de noviembre en la Final a 8 de Copa Davis, en Málaga, Rafa Nadal hará su...</p>
                 <a href="#">Leer más</a>
             </article>
+            <!-- Tercera noticia -->
             <article>
                 <h2>Las estrellas del tenis en silla se enfrentan en el Real Club Pineda por el Campeonato de España</h2>
                 <p>Por primera vez se reunirán en un mismo campeonato los doce mejores deportistas del país en esta modalidad; destaca Martín de la Puente,...</p>
                 <a href="#">Leer más</a>
             </article>
+            <!-- Cuarta noticia -->
             <article>
                 <h2>Juan Carlos Ferrero y su academia de Villena ficharán por Nike</h2>
                 <p>Carlos Alcaraz es la gran apuesta de la multinacional estadounidense Nike junto al italiano Jannik Sinner. Su rivalidad se compara a la que...</p>
@@ -65,7 +82,9 @@
     </main>
     
     <footer>
+        <!-- Información de copyright -->
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+

@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Especifica el tipo de documento y el idioma para accesibilidad y SEO -->
     <meta charset="UTF-8">
+    <!-- Asegura que la página sea responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estadísticas - Mundo Tenístico</title>
+    <!-- Enlace a hoja de estilos externa -->
     <link rel="stylesheet" href="./styles/styles_estadisticas.css">
+    <!-- Integración de fuentes personalizadas de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
     <script>
+        // Agrega funcionalidad para el menú hamburguesa
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
     
+            // Alterna la clase 'active' para mostrar u ocultar el menú
             hamburger.addEventListener("click", function () {
                 navbar.classList.toggle("active");
             });
@@ -20,13 +26,17 @@
 <body>
     <header>
         <nav class="navbar">
+            <!-- Logotipo del sitio -->
             <div class="logo">Mundo Tenístico</div>
+            <!-- Icono de menú para dispositivos móviles -->
             <div class="hamburger">
+                <!-- Líneas representando el icono de hamburguesa -->
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <ul class="nav-links">
+                <!-- Enlaces de navegación -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
                 <li><a href="estadisticas.html">Estadísticas</a></li>
@@ -39,14 +49,17 @@
     <main>
         <h1>Estadísticas de Jugadores</h1>
         <section class="estadisticas">
+            <!-- Cada div representa una categoría estadística -->
             <div class="stat">
                 <h2>Líderes al Saque</h2>
+                <!-- El encabezado principal debe destacar al mejor jugador -->
                 <h3>A. Zverev: 300.3</h3>
                 <p>G. Mpetshi Perricard: 299.5</p>
                 <p>M.Berritini: 296.2</p>
                 <p>H.Hurkacz: 295.8</p>
                 <p>J. Sinner: 295.6</p>
             </div>
+            <!-- Siguientes secciones siguen el mismo formato -->
             <div class="stat">
                 <h2>Líderes al Resto</h2>
                 <h3>A. de Miñaur: 165.6</h3>
@@ -106,6 +119,7 @@
         </section>
     </main>
     <footer>
+        <!-- Información de copyright -->
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>
 </body>

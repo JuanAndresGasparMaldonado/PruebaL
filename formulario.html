@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Definición del tipo de documento y configuración del idioma -->
 
 <head>
+    <!-- Configuración de metadatos y recursos externos -->
     <meta charset="UTF-8">
+    <!-- Codificación de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configuración para que el diseño sea adaptable a dispositivos móviles -->
     <title>Mundo Tenístico - Formulario</title>
+    <!-- Título de la página -->
     <link rel="stylesheet" href="./styles/styles_formulario.css">
+    <!-- Enlace al archivo de estilos CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+    <!-- Fuente personalizada desde Google Fonts -->
     <script>
+        // Script para la funcionalidad del menú hamburguesa
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
@@ -20,14 +28,19 @@
 </head>
 
 <body>
+    <!-- Contenido principal de la página -->
     <header>
+        <!-- Encabezado con barra de navegación -->
         <nav class="navbar">
+            <!-- Contenedor del logo -->
             <div class="logo">Mundo Tenístico</div>
+            <!-- Menú hamburguesa para dispositivos móviles -->
             <div class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <!-- Lista de enlaces de navegación -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -39,33 +52,44 @@
         </nav>
     </header>
     <main>
+        <!-- Contenido principal del formulario -->
         <h1>Formulario</h1>
         <form>
+            <!-- Campos del formulario con validaciones -->
             <label for="nombre">Nombre:</label>
+            <!-- Campo para ingresar el nombre -->
             <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo se permiten letras y espacios." required><br><br>
 
             <label for="apellido">Apellido:</label>
+            <!-- Campo para ingresar el apellido -->
             <input type="text" id="apellido" name="apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo se permiten letras y espacios." required><br><br>
 
             <label for="email">Correo electrónico:</label>
+            <!-- Campo para ingresar el correo electrónico -->
             <input type="email" id="email" name="email" required title="Por favor, introduce un correo electrónico válido."><br><br>
 
             <label for="telefono">Teléfono:</label>
+            <!-- Campo para ingresar el teléfono con validación de 10 dígitos -->
             <input type="tel" id="telefono" name="telefono" pattern="\d{10}" title="El teléfono debe tener 10 dígitos." required><br><br>
 
             <label for="direccion">Dirección:</label>
+            <!-- Campo para ingresar la dirección -->
             <input type="text" id="direccion" name="direccion" required><br><br>
 
             <label for="ciudad">Ciudad:</label>
+            <!-- Campo para ingresar la ciudad -->
             <input type="text" id="ciudad" name="ciudad" required><br><br>
 
             <label for="codigo_postal">Código Postal:</label>
+            <!-- Campo para ingresar el código postal con validación de 5 dígitos -->
             <input type="text" id="codigo_postal" name="codigo_postal" pattern="\d{5}" title="El código postal debe tener 5 dígitos." required><br><br>
 
             <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <!-- Campo para ingresar la fecha de nacimiento -->
             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
 
             <label for="genero">Género:</label>
+            <!-- Campo de selección para el género -->
             <select id="genero" name="genero" required>
                 <option value="">Seleccione...</option>
                 <option value="masculino">Masculino</option>
@@ -74,18 +98,22 @@
             </select><br><br>
 
             <label for="mensaje">Mensaje:</label>
+            <!-- Campo de texto para ingresar un mensaje -->
             <textarea id="mensaje" name="mensaje" required></textarea><br><br>
 
             <label>
+                <!-- Checkbox para aceptar términos y condiciones -->
                 <input type="checkbox" id="terminos" name="terminos" required>
                 Acepto los términos y condiciones y la política de protección de datos</a>.
             </label><br><br>
 
             <p>Todos los campos marcados con * son obligatorios.</p>
+            <!-- Botón para enviar el formulario -->
             <input type="submit" value="Enviar">
         </form>
     </main>
     <footer>
+        <!-- Pie de página -->
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>
 </body>

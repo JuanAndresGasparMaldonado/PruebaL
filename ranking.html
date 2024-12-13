@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Declaración del tipo de documento HTML y especificación del idioma para SEO y accesibilidad -->
     <meta charset="UTF-8">
+    <!-- Configuración para asegurar que la página sea responsiva en dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking - Mundo Tenístico</title>
+    <!-- Enlace a la hoja de estilos específica para esta página -->
     <link rel="stylesheet" href="./styles/styles_ranking.css">
+    <!-- Importación de fuentes personalizadas desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
     <script>
+        // Script para manejar el menú hamburguesa en dispositivos móviles
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
     
+            // Alterna la clase 'active' para mostrar/ocultar el menú
             hamburger.addEventListener("click", function () {
                 navbar.classList.toggle("active");
             });
@@ -19,13 +25,18 @@
 </head>
 <body>
     <header>
+        <!-- Encabezado principal que incluye el menú de navegación -->
         <nav class="navbar">
+            <!-- Logotipo del sitio -->
             <div class="logo">Mundo Tenístico</div>
+            <!-- Menú hamburguesa para navegación móvil -->
             <div class="hamburger">
+                <!-- Tres líneas que representan el icono de menú hamburguesa -->
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+            <!-- Lista de enlaces de navegación -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -37,9 +48,12 @@
         </nav>
     </header>
     <main>
+        <!-- Título principal de la página -->
         <h1>Ranking ATP</h1>
+        <!-- Tabla para mostrar el ranking de jugadores -->
         <table>
             <thead>
+                <!-- Cabecera de la tabla con los títulos de las columnas -->
                 <tr>
                     <th>Posición</th>
                     <th>Jugador</th>
@@ -48,12 +62,14 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- Fila con los datos del jugador en la posición 1 -->
                 <tr>
                     <td>1</td>
                     <td>Jannik Sinner</td>
                     <td>11,830</td>
                     <td>23</td>
                 </tr>
+                <!-- Más filas con los datos de los jugadores -->
                 <tr>
                     <td>2</td>
                     <td>Alexander Zverev</td>
@@ -112,6 +128,7 @@
         </table>
     </main>
     <footer>
+        <!-- Pie de página con información de derechos de autor -->
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>
 </body>

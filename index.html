@@ -2,16 +2,24 @@
 <html lang="es">
 
 <head>
+    <!-- Metadatos básicos para la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Tenístico</title>
+
+    <!-- Enlace al archivo CSS para los estilos -->
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <!-- Fuente de Google Fonts para mejorar la tipografía -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Comfortaa:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Script para habilitar el menú desplegable en dispositivos móviles -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector(".hamburger");
             const navbar = document.querySelector(".navbar");
 
+            // Alternar la clase "active" para mostrar/ocultar el menú
             hamburger.addEventListener("click", function () {
                 navbar.classList.toggle("active");
             });
@@ -20,14 +28,20 @@
 </head>
 
 <body>
+    <!-- Encabezado de la página con barra de navegación -->
     <header>
         <nav class="navbar">
+            <!-- Logo del sitio -->
             <div class="logo">Mundo Tenístico</div>
+
+            <!-- Icono de menú hamburguesa para dispositivos móviles -->
             <div class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
+
+            <!-- Enlaces de navegación -->
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -38,30 +52,40 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contenido principal de la página -->
     <main>
-        <main>
-            <section class="hero">
-                <h1>Bienvenido a Mundo Tenístico, donde podrás encontrar todo sobre el tenis.</h1>
-                <p>Explora nuestro innovador calendario de torneos del 2025, con diferentes gamas de colores para cada tipo de superficie.</p>
-                <a href="./calendario.html" class="cta-button">Calendario</a>
-            </section>
-        </main>
+        <!-- Sección principal de bienvenida -->
+        <section class="hero">
+            <h1>Bienvenido a Mundo Tenístico, donde podrás encontrar todo sobre el tenis.</h1>
+            <p>Explora nuestro innovador calendario de torneos del 2025, con diferentes gamas de colores para cada tipo de superficie.</p>
+            <!-- Botón de llamada a la acción para ir al calendario -->
+            <a href="./calendario.html" class="cta-button">Calendario</a>
+        </section>
+    </main>
+
+    <!-- Sección de banner con imágenes y enlaces destacados -->
     <section class="banner">
         <div class="banner-container">
+            <!-- Primer slide del banner -->
             <div class="banner-slide">
                 <img src="./image/imagen1_canvas.jpg" alt="Imagen 1">
                 <a href="./ranking.html" class="banner-button">Ranking</a>
             </div>
+            <!-- Segundo slide del banner -->
             <div class="banner-slide">
                 <img src="./image/imagen2_canvas.jpg" alt="Imagen 2">
                 <a href="./estadisticas.html" class="banner-button">Estadísticas</a>
             </div>
+            <!-- Tercer slide del banner -->
             <div class="banner-slide">
                 <img src="./image/imagen3_canvas.jpg" alt="Imagen 3">
                 <a href="./noticias.html" class="banner-button">Noticias</a>
             </div>
         </div>
     </section>
+
+    <!-- Pie de página con derechos reservados -->
     <footer>
         <p>&copy; 2024 Mundo Tenístico. Todos los derechos reservados.</p>
     </footer>
