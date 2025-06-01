@@ -260,3 +260,46 @@ footer {
         font-size: 1rem;
     }
 }
+.carrusel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.carrusel-img {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.carrusel-img.active {
+    display: block;
+}
+
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007a33dd;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.carrusel-btn.prev { left: 0; }
+.carrusel-btn.next { right: 0; }
+
+.auto-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007a33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

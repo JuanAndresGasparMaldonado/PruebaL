@@ -46,6 +46,28 @@
             </ul>
         </nav>
     </header>
+    <button id="modoOscuro">🌓 Modo Oscuro</button>
+    <script>
+        // Ejercicio 3: Gestión del modo oscuro
+        function setModoOscuro(activar) {
+            document.body.classList.toggle("modo-oscuro", activar);
+            document.cookie = "modoOscuro=" + (activar ? "1" : "0") + "; path=/";
+        }
+    
+        // Leer cookie al cargar
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            if (cookie.indexOf("modoOscuro=") == 0) {
+                setModoOscuro(cookie.split("=")[1] == "1");
+            }
+        }
+    
+        // Evento del botón
+        document.getElementById("modoOscuro").onclick = function() {
+            setModoOscuro(!document.body.classList.contains("modo-oscuro"));
+        };
+    </script>
     <main>
         <!-- Encabezado principal de la página -->
         <h1>Últimas Noticias</h1>

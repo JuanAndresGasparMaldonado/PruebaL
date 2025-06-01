@@ -44,3 +44,39 @@ article:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* Modo oscuro para noticias */
+.modo-oscuro {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.modo-oscuro article {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+}
+
+.modo-oscuro article h2 {
+    color: #4CAF50 !important; /* Verde tenístico para títulos */
+}
+
+.modo-oscuro article p {
+    color: #cccccc !important;
+}
+
+.modo-oscuro article a {
+    color: #80c783 !important; /* Verde más claro para enlaces */
+}
+
+#modoOscuro {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    padding: 8px 15px;
+    background: #007a33;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}

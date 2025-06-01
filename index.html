@@ -49,6 +49,7 @@
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="ranking.html">Ranking</a></li>
                 <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="base_datos.php">Base de datos</a></li>
             </ul>
         </nav>
     </header>
@@ -62,6 +63,50 @@
             <!-- Botón de llamada a la acción para ir al calendario -->
             <a href="./calendario.html" class="cta-button">Calendario</a>
         </section>
+        <!--carrusel para realizar los ejercicios 1 y 2--> 
+        <section class="carrusel-container">
+            <div class="carrusel-inner">
+                <img src="./image/tenis1.png" class="carrusel-img active" alt="Tenis 1">
+                <img src="./image/tenis2.png" class="carrusel-img" alt="Tenis 2">
+                <img src="./image/tenis3.png" class="carrusel-img" alt="Tenis 3">
+                <img src="./image/tenis4.png" class="carrusel-img" alt="Tenis 4">
+                <img src="./image/tenis5.jpeg" class="carrusel-img" alt="Tenis 5">
+                <img src="./image/tenis6.jpeg" class="carrusel-img" alt="Tenis 6">
+                <img src="./image/tenis7.jpeg" class="carrusel-img" alt="Tenis 7">
+                <img src="./image/tenis8.jpeg" class="carrusel-img" alt="Tenis 8">
+            </div>
+            <button class="carrusel-btn prev" onclick="cambiarImagen(-1)">❮</button>
+            <button class="carrusel-btn next" onclick="cambiarImagen(1)">❯</button>
+            <button class="auto-btn" onclick="toggleAuto()">⏸</button>
+        </section>
+
+        <script>
+            // De los ejercicios 1 y 2
+            let indice = 0;
+            let intervalo;
+            let autoActivo = true;
+            const imagenes = document.getElementsByClassName('carrusel-img');
+
+            function cambiarImagen(direccion) {
+                imagenes[indice].classList.remove('active');
+                indice = (indice + direccion + imagenes.length) % imagenes.length;
+                imagenes[indice].classList.add('active');
+            }
+
+            function toggleAuto() {
+                if (autoActivo) {
+                    clearInterval(intervalo);
+                    document.querySelector('.auto-btn').textContent = '▶';
+                } else {
+                    intervalo = setInterval(function(){ cambiarImagen(1) }, 3000);
+                    document.querySelector('.auto-btn').textContent = '⏸';
+                }
+                autoActivo = !autoActivo;
+            }
+            
+            // Iniciar automático
+            intervalo = setInterval(function(){ cambiarImagen(1) }, 3000);
+        </script>           
     </main>
 
     <!-- Sección de banner con imágenes y enlaces destacados -->
